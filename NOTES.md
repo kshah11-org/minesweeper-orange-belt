@@ -25,3 +25,4 @@ TODO:
 ✅ Write test for UAT 2.2
 ✅ Write functionality for UAT 2.2
 ✅ Refactor
+✅ Update User story/UATs

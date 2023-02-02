@@ -36,6 +36,6 @@ So that I continue playing game
 
 # UAT 3.1
 
-Given an empty 3x3 board
-When the user hits the top left square which is number 3
-Then the user can mark the squares around it with as mines
+Given a 3x3 board with the top left square as 3
+When the user marks the squares around it
+Then an updated board with the number is returned
