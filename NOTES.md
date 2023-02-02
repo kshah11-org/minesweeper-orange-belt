@@ -20,8 +20,8 @@ TODO:
 # Pomodoro 2
 
 ✅ Write User stories 3 and relevant UATs
-🚧 Write test for UAT 2.1
+✅ Write test for UAT 2.1
+✅ Write functionality for UAT 2.1
 
-- Write functionality for UAT 2.1
 - Write test for UAT 2.2
 - Write functionality for UAT 2.2
