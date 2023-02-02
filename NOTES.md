@@ -26,3 +26,5 @@ TODO:
 ✅ Write functionality for UAT 2.2
 ✅ Refactor
 ✅ Update User story/UATs
+✅ Write test for UAT 3.1
+✅ Write functionality for UAT 3.1
