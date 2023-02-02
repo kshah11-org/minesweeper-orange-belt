@@ -8,7 +8,7 @@ TODO:
 
 # Pomodoro 1
 
-✅ Domain
+✅ Write Domain
+✅ Write User Story
 
-- User Story
-- UAT
+- Write UAT
