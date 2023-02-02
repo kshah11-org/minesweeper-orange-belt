@@ -1,7 +1,7 @@
 {
-  "name": "template-nodejs",
+  "name": "minesweeper-orange-belt",
   "version": "1.0.0",
-  "description": "node js template",
+  "description": "minesweeper-orange-belt",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kshah11/template-nodejs.git"
+    "url": "git+https://github.com/kshah11-org/minesweeper-orange-belt.git"
   },
   "author": "Kush Shah",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kshah11/template-nodejs/issues"
+    "url": "https://github.com/kshah11-org/minesweeper-orange-belt/issues"
   },
-  "homepage": "https://github.com/kshah11/template-nodejs#readme",
+  "homepage": "https://github.com/kshah11-org/minesweeper-orange-belt#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
