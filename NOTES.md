@@ -12,6 +12,5 @@ TODO:
 ✅ Write User Story
 ✅ Write UAT
 ✅ Rename files and functions
-
-- Write test for UAT 1.1
-- Write functionality for
+✅ Write test for UAT 1.1
+✅ Write functionality for UAT 1.1
