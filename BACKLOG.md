@@ -39,3 +39,15 @@ So that I continue playing game
 Given a 3x3 board with the top left square as 3
 When the user marks the squares around it
 Then an updated board with the number is returned
+
+# User Story 4
+
+As a User
+I want to clear the board without hitting a mine
+So that I can win the game
+
+# UAT 4.1
+
+Given a 3x3 board
+When the board is cleared without a mine being hit
+Then the user wins

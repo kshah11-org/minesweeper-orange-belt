@@ -32,5 +32,4 @@ TODO:
 # Pomodoro 3
 
 ✅ Fix ESLint failure
-
-- Write more UserStories/UATs
+✅ Write more UserStories/UATs
