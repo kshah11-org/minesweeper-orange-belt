@@ -1,4 +1,4 @@
-const dummy = require('../src/dummy');
+const dummy = require('../src/minesweeper');
 
 describe('name of the group', () => {
   it('should', () => {
