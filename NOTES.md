@@ -14,3 +14,5 @@ TODO:
 ✅ Rename files and functions
 ✅ Write test for UAT 1.1
 ✅ Write functionality for UAT 1.1
+✅ Update domain
+✅ Write more User stories/UATs
