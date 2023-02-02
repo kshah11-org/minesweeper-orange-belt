@@ -1,4 +1,4 @@
-const { minesweeper, round, markMines } = require('../src/minesweeper');
+const { minesweeper, round, markMines, checkCleared } = require('../src/minesweeper');
 
 describe('Given a 3x3 board', () => {
   const boardSize = 3;
@@ -43,5 +43,13 @@ describe('Given a 3x3 board', () => {
       [null, null, null],
     ];
     expect(markMines(board)).toEqual(resultBoard);
+  });
+  test('return true when the board is cleared without hitting a mine', () => {
+    const board = [
+      [2, 2, 1],
+      ['*', '*', 2],
+      [3, '*', 2],
+    ];
+    expect(checkCleared(board)).toEqual(true);
   });
 });

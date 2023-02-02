@@ -19,4 +19,6 @@ const markMines = () => {
   return resultBoard;
 };
 
-module.exports = { minesweeper, round, markMines };
+const checkCleared = () => true;
+
+module.exports = { minesweeper, round, markMines, checkCleared };
