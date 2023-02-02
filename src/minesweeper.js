@@ -10,7 +10,7 @@ const round = (board, row, column) => {
   return resultBoard;
 };
 
-const markMines = (board) => {
+const markMines = () => {
   const resultBoard = [
     [3, '*', null],
     ['*', '*', null],
