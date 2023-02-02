@@ -51,3 +51,27 @@ So that I can win the game
 Given a 3x3 board
 When the board is cleared without a mine being hit
 Then the user wins
+
+# User Story 5
+
+As a User
+I want to play a game of multiple turns till i hit a mine
+So that I lose the game
+
+# UAT 5.1
+
+Given an empty 3x3 board
+When the user hits a number followed by a mine
+Then the user loses the game
+
+# UAT 5.1
+
+Given an empty 3x3 board
+When the user hits a number followed by a mine
+Then the user loses the game
+
+# UAT 5.2
+
+Given an empty 3x3 board
+When the user hits 2 number followed by a mine
+Then the user loses the game
