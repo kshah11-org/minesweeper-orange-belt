@@ -10,5 +10,4 @@ TODO:
 
 ✅ Write Domain
 ✅ Write User Story
-
-- Write UAT
+✅ Write UAT
