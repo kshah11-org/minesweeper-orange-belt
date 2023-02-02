@@ -16,6 +16,19 @@ describe('Given a 3x3 board', () => {
       [null, 2, null],
       [null, null, null],
     ];
-    expect(round(emptyBoard)).toEqual(resultBoard);
+    expect(round(emptyBoard, 1, 1)).toEqual(resultBoard);
+  });
+  test('when a user hits the top left square with number 0 the updated board should be returned', () => {
+    const emptyBoard = [
+      [null, null, null],
+      [null, null, null],
+      [null, null, null],
+    ];
+    const resultBoard = [
+      [0, null, null],
+      [null, null, null],
+      [null, null, null],
+    ];
+    expect(round(emptyBoard, 0, 0)).toEqual(resultBoard);
   });
 });
