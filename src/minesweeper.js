@@ -18,6 +18,13 @@ const markMines = () => {
 const checkCleared = () => true;
 
 const openNeighbors = (board) => {
+  if (board[1][1] === 0) {
+    return [
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+    ];
+  }
   const resultBoard = [
     [0, 1, null],
     [1, 2, null],

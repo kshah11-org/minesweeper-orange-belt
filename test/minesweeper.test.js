@@ -66,6 +66,20 @@ describe('Given a 3x3 board', () => {
     const board2 = round(emptyBoard, 0, 0, answerBoard);
     expect(openNeighbors(board2)).toEqual(resultBoard);
   });
+  test('when a user hits the centre square with number 0 the neighboring squares should be opened', () => {
+    const emptyBoard = [
+      [null, null, null],
+      [null, null, null],
+      [null, null, null],
+    ];
+    const resultBoard = [
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0],
+    ];
+    const board2 = round(emptyBoard, 1, 1, resultBoard);
+    expect(openNeighbors(board2)).toEqual(resultBoard);
+  });
   test('the marked board should be returned with the mines marked', () => {
     const board = [
       [3, null, null],
