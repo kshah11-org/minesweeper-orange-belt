@@ -75,3 +75,21 @@ Then the user loses the game
 Given an empty 3x3 board
 When the user hits 2 number followed by a mine
 Then the user loses the game
+
+# User Story 6
+
+As a User
+I want to hit a square with the number 0
+So that all its neighbors open up
+
+# UAT 6.1
+
+Given an empty 3x3 board
+When the user hits a number zero on the top left
+Then all the neighbors on the board open up
+
+# UAT 6.1
+
+Given an empty 3x3 board
+When the user hits a number zero in the centre
+Then all the neighbors on the board open up
