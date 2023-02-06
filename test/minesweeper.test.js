@@ -17,12 +17,17 @@ describe('Given a 3x3 board', () => {
       [null, null, null],
       [null, null, null],
     ];
+    const answerBoard = [
+      [1, 2, 1],
+      ['*', 2, '*'],
+      [1, 2, 1],
+    ];
     const resultBoard = [
       [null, null, null],
       [null, 2, null],
       [null, null, null],
     ];
-    expect(round(emptyBoard, 1, 1)).toEqual(resultBoard);
+    expect(round(emptyBoard, 1, 1, answerBoard)).toEqual(resultBoard);
   });
   test('when a user hits the top left square with number 0 the updated board should be returned', () => {
     const emptyBoard = [
@@ -30,12 +35,17 @@ describe('Given a 3x3 board', () => {
       [null, null, null],
       [null, null, null],
     ];
+    const answerBoard = [
+      [0, 2, '*'],
+      [0, 2, '*'],
+      [0, 1, 1],
+    ];
     const resultBoard = [
       [0, null, null],
       [null, null, null],
       [null, null, null],
     ];
-    expect(round(emptyBoard, 0, 0)).toEqual(resultBoard);
+    expect(round(emptyBoard, 0, 0, answerBoard)).toEqual(resultBoard);
   });
   test('when a user hits the top left square with number 0 the neighboring squares should be opened', () => {
     const emptyBoard = [
@@ -43,12 +53,17 @@ describe('Given a 3x3 board', () => {
       [null, null, null],
       [null, null, null],
     ];
+    const answerBoard = [
+      [0, 1, '*'],
+      [1, 2, 1],
+      ['*', 1, 0],
+    ];
     const resultBoard = [
       [0, 1, null],
       [1, 2, null],
       [null, null, null],
     ];
-    const board2 = round(emptyBoard, 0, 0);
+    const board2 = round(emptyBoard, 0, 0, answerBoard);
     expect(openNeighbors(board2)).toEqual(resultBoard);
   });
   test('the marked board should be returned with the mines marked', () => {

@@ -1,12 +1,8 @@
 const minesweeper = () => 'BOOM! – Game Over';
 
-const round = (board, row, column) => {
+const round = (board, row, column, answerBoard) => {
   const resultBoard = board;
-  if (row === 0) {
-    resultBoard[row][column] = 0;
-  } else {
-    resultBoard[row][column] = 2;
-  }
+  resultBoard[row][column] = answerBoard[row][column];
   return resultBoard;
 };
 
@@ -21,7 +17,7 @@ const markMines = () => {
 
 const checkCleared = () => true;
 
-const openNeighbors = () => {
+const openNeighbors = (board) => {
   const resultBoard = [
     [0, 1, null],
     [1, 2, null],

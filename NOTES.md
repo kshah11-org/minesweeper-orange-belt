@@ -47,6 +47,7 @@ TODO:
 ✅ Write UATs for neighbors of a square with number 0
 ✅ Write test for neighbors of a square with number 0 opening up
 ✅ Write functionality for neighbors of a square with number 0 opening up
+✅ Refactor round function
 
 - Write test for board with no mines
 - Write functionality for board with no mines
