@@ -1,4 +1,10 @@
-const { minesweeper, round, markMines, checkCleared } = require('../src/minesweeper');
+const {
+  minesweeper,
+  round,
+  markMines,
+  checkCleared,
+  openNeighbors,
+} = require('../src/minesweeper');
 
 describe('Given a 3x3 board', () => {
   const boardSize = 3;
@@ -30,6 +36,20 @@ describe('Given a 3x3 board', () => {
       [null, null, null],
     ];
     expect(round(emptyBoard, 0, 0)).toEqual(resultBoard);
+  });
+  test('when a user hits the top left square with number 0 the neighboring squares should be opened', () => {
+    const emptyBoard = [
+      [null, null, null],
+      [null, null, null],
+      [null, null, null],
+    ];
+    const resultBoard = [
+      [0, 1, null],
+      [1, 2, null],
+      [null, null, null],
+    ];
+    const board2 = round(emptyBoard, 0, 0);
+    expect(openNeighbors(board2)).toEqual(resultBoard);
   });
   test('the marked board should be returned with the mines marked', () => {
     const board = [

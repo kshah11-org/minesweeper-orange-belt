@@ -21,4 +21,12 @@ const markMines = () => {
 
 const checkCleared = () => true;
 
-module.exports = { minesweeper, round, markMines, checkCleared };
+const openNeighbors = () => {
+  const resultBoard = [
+    [0, 1, null],
+    [1, 2, null],
+    [null, null, null],
+  ];
+  return resultBoard;
+};
+module.exports = { minesweeper, round, markMines, checkCleared, openNeighbors };

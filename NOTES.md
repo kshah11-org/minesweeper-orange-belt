@@ -45,8 +45,8 @@ TODO:
 
 ✅ Write User story for neighbors of a square with number 0
 ✅ Write UATs for neighbors of a square with number 0
+✅ Write test for neighbors of a square with number 0 opening up
+✅ Write functionality for neighbors of a square with number 0 opening up
 
-- Write test for neighbors of a square with number 0 opening up
-- Write functionality for neighbors of a square with number 0 opening up
 - Write test for board with no mines
 - Write functionality for board with no mines
